@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body > header{
+    background-color: grey; /*  estiliza somente o filo direto, primeiro header que é filho do body   */
+    padding: 16px 0; /*  espaçamento ao cabeçalho   */
+    color: rgb(241, 236, 236);
+}
+
+header .container{
+    display: flex; /*     */
+    align-items: center; /* usado para alinhha titulo com menu  */
+    justify-content: space-between; /* separar logo do link, um pra esquerda outro pra direita  */
+}
+
+header li{
+    display: inline; /* configura a forma que o elemento será exibido, exemplo no caso apenas deixar um do lado do outros como uma lista "EM UMA LINHA" */
+}
+
+header li a{
+    color: aliceblue;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto 0 auto; /* centralizou a parte no centro da tela ou só "0 auto"*/
+}
+
+.articles{
+    display: flex; /* colocou um do lado do outro */
+    flex-wrap: wrap; /*   fixou e colocou que se tiver mais de 3 noticias ela desce para baixo  */
+    justify-content: space-between; /*  espaço dividido da margem que sobrou, sendo colocado entre as caixas de publi para dar espaço de forma igualitária   */
+}
+
+.articles img{
+    height: 180px; /*   Fez descer a imagem, pois estava uma ao lado da outra  */
+}
+
+.articles article{
+    width: 30%; /*   Dividiu a tela em porcentagem para mostrar uma quantidade de que cada article tem que usar, fez virar 3 publi por pagina  */
+}
+
+section{
+    padding: 16px 0;  /*  espaçamento para as sessoes   */
+}
+
+section h2, .articles article{
+    margin-bottom: 16px; /*   margem na parte inferior nos titulos das sessoes  */
+}/*   o .articles article foi para dar um margem depois do "ler mais"  */
+
+section h3, .articles article{
+    margin-top: 8px;
+    margin-bottom: 8px; /* Coloca margem no h3  */
+}
+
+.articles article a{ /* meche no botao ler mais "a"  */
+    background-color: blue; /*  muda cor de fundo do botao */
+    color: aliceblue; /* cor da letra  */
+    padding: 8px;
+    display: inline-block; /*  adiciona quebra para quebrar display inline, de sobreposição que tava tendo */
+    text-decoration: none; /* remove sublinhado do link */ 
+    font-weight: bold;
+    margin-top: 8px;
+      
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p, .articles article a{ /* Altera a fonte do corpo e "p" e do link "a" */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports {
+    
+    background-color: rgba(0, 255, 0, 0.1); /* 10% de transparência */
+}
+#sports .articles article a{
+    background-color: rgba(15, 85, 15, 0.5);
+    
+}
+
+#economy{
+    background-color: rgba(182, 26, 202, 0.2);
+}
+
+#economy .articles article a{
+    background-color: rgba(182, 26, 202, 0.5);
+}
+
+#car{
+    background-color: rgba(194, 236, 3, 0.2);
+}
+
+#car .articles article a{
+    background-color: rgba(194, 236, 3, 0.5);
+}
+
+#tecnology{
+    background-color: rgba(247, 9, 9, 0.2);
+}
+
+#tecnology .articles article a{
+    background-color: rgba(247, 9, 9, 0.5);
+}
+

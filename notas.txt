@@ -1,0 +1,22 @@
+/*
+/*usado para modificar todos os elementos da tela, que não tenha ID aplicado ou CLASSE */ /* pode se usar classes, Id's e outros seletores por exemplo, como um link quando o mouse está acima deles */
+h1 {
+    color : green;
+}
+
+h2{
+    color: green;
+    
+}
+/*usado para modificar direto o H */
+
+#economia{
+    color: blueviolet;
+}
+/*usado para modificar id */
+
+.creation-date{
+    color: #ccc;
+}
+/*usado para modificar classe */
+
